@@ -9,7 +9,7 @@ export default function ClusterFeature() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div>
+    <>
       <AppHero
         title="Clusters"
         subtitle="Manage and select your Solana clusters"
@@ -26,6 +26,6 @@ export default function ClusterFeature() {
         </button>
       </AppHero>
       <ClusterUiTable />
-    </div>
+    </>
   );
 }
