@@ -1,6 +1,6 @@
 'use client';
 
-import React, { ReactNode, useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { ReactQueryStreamedHydration } from '@tanstack/react-query-next-experimental';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 
