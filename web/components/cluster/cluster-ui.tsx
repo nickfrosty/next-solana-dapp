@@ -145,7 +145,7 @@ export function ClusterUiTable() {
       <table className="table border-4 border-separate border-base-300">
         <thead>
           <tr>
-            <th>Name/ Network / Endpoint</th>
+            <th>Name / Network / Endpoint</th>
             <th className="text-center">Actions</th>
           </tr>
         </thead>
