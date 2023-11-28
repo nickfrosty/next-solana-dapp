@@ -1,7 +1,6 @@
 'use client';
 
 import { WalletButton } from '../solana/solana-provider';
-import * as React from 'react';
 import { ReactNode, Suspense, useEffect, useRef } from 'react';
 
 import Link from 'next/link';
@@ -57,7 +56,7 @@ export function UiLayout({ children }: { children: ReactNode }) {
       <ClusterChecker>
         <AccountChecker />
       </ClusterChecker>
-      <div className="flex-grow mx-4 lg:mx-auto">
+      <div className="flex-grow mx-4 lg:mx-auto p-6">
         <Suspense
           fallback={
             <div className="text-center my-32">
