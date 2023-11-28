@@ -16,7 +16,7 @@ import { ReactNode, useCallback, useMemo } from 'react';
 import {
   toWalletAdapterNetwork,
   useCluster,
-} from '../cluster/cluster-data-access';
+} from '@/components/cluster/cluster-data-access';
 
 require('@solana/wallet-adapter-react-ui/styles.css');
 

@@ -5,9 +5,9 @@ import { LAMPORTS_PER_SOL, PublicKey } from '@solana/web3.js';
 import { IconRefresh } from '@tabler/icons-react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useMemo, useState } from 'react';
-import { AppModal, ellipsify } from '../ui/ui-layout';
-import { useCluster } from '../cluster/cluster-data-access';
-import { ExplorerLink } from '../cluster/cluster-ui';
+import { AppModal, ellipsify } from '@/components/ui/ui-layout';
+import { useCluster } from '@/components/cluster/cluster-data-access';
+import { ExplorerLink } from '@/components/cluster/cluster-ui';
 import { useAccount } from './account-data-access';
 
 export function AccountBalance({ address }: { address: PublicKey }) {
@@ -125,7 +125,7 @@ export function AccountTokens({ address }: { address: PublicKey }) {
           <h2 className="text-2xl font-bold">Token Accounts</h2>
           <div className="space-x-2">
             {query.isLoading ? (
-              <span className="loading loading-spinner loading"></span>
+              <span className="loading-spinner loading"></span>
             ) : (
               <button
                 className="btn btn-sm btn-outline"
@@ -238,7 +238,7 @@ export function AccountTransactions({ address }: { address: PublicKey }) {
         <h2 className="text-2xl font-bold">Transaction History</h2>
         <div className="space-x-2">
           {query.isLoading ? (
-            <span className="loading loading-spinner loading"></span>
+            <span className="loading loading-spinner"></span>
           ) : (
             <button
               className="btn btn-sm btn-outline"
@@ -362,7 +362,7 @@ function ModalAirdrop({
       show={show}
       title="Airdrop"
       submitDisabled={!amount || mutation.isPending}
-      submitLabel="Requqest Airdrop"
+      submitLabel="Request Airdrop"
       submit={() => mutation.mutateAsync(amount).then(() => hide())}
     >
       <input

@@ -1,9 +1,9 @@
 'use client';
 
 import { useWallet } from '@solana/wallet-adapter-react';
-import { WalletButton } from '../solana/solana-provider';
-import { AppHero, ellipsify } from '../ui/ui-layout';
-import { ExplorerLink } from '../cluster/cluster-ui';
+import { WalletButton } from '@/components/solana/solana-provider';
+import { AppHero, ellipsify } from '@/components/ui/ui-layout';
+import { ExplorerLink } from '@/components/cluster/cluster-ui';
 import { useCounterProgram } from './counter-data-access';
 import { CounterCreate, CounterList } from './counter-ui';
 

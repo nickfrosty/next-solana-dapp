@@ -2,8 +2,8 @@
 
 import { Keypair, PublicKey } from '@solana/web3.js';
 import { useMemo } from 'react';
-import { ellipsify } from '../ui/ui-layout';
-import { ExplorerLink } from '../cluster/cluster-ui';
+import { ellipsify } from '@/components/ui/ui-layout';
+import { ExplorerLink } from '@/components/cluster/cluster-ui';
 import {
   useCounterProgram,
   useCounterProgramAccount,

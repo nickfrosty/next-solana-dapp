@@ -4,7 +4,7 @@ import { useConnection } from '@solana/wallet-adapter-react';
 import { IconTrash } from '@tabler/icons-react';
 import { useQuery } from '@tanstack/react-query';
 import { ReactNode, useState } from 'react';
-import { AppModal } from '../ui/ui-layout';
+import { AppModal } from '@/components/ui/ui-layout';
 import { ClusterNetwork, useCluster } from './cluster-data-access';
 
 export function ExplorerLink({

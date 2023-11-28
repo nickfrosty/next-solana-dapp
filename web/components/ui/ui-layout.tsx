@@ -1,16 +1,16 @@
 'use client';
 
-import { WalletButton } from '../solana/solana-provider';
+import { WalletButton } from '@/components/solana/solana-provider';
 import { ReactNode, Suspense, useEffect, useRef } from 'react';
 
 import Link from 'next/link';
 
-import { AccountChecker } from '../account/account-ui';
+import { AccountChecker } from '@/components/account/account-ui';
 import {
   ClusterChecker,
   ClusterUiSelect,
   ExplorerLink,
-} from '../cluster/cluster-ui';
+} from '@/components/cluster/cluster-ui';
 import toast, { Toaster } from 'react-hot-toast';
 
 export function UiLayout({ children }: { children: ReactNode }) {

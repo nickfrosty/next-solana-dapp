@@ -1,6 +1,6 @@
 'use client';
 
-import { AppHero } from '../ui/ui-layout';
+import { AppHero } from '@/components/ui/ui-layout';
 
 const links: { label: string; href: string }[] = [
   { label: 'Solana Docs', href: 'https://docs.solana.com/' },
