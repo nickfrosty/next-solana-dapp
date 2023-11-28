@@ -1,11 +1,10 @@
 # anchor
 
-This library was generated with [Nx](https://nx.dev).
+This should have some more anchor related details in the generated readme
 
-## Building
+Like:
 
-Run `nx build anchor` to build the library.
-
-## Running unit tests
-
-Run `nx test anchor` to execute the unit tests via [Jest](https://jestjs.io).
+- how to install anchor
+- how to build the projects in this monorepo
+- how to start the local test validator?
+- how to run the tests?
