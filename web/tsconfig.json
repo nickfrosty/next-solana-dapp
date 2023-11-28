@@ -15,6 +15,7 @@
     "plugins": [{ "name": "next" }],
     "baseUrl": ".",
     "paths": {
+      "@my-next-solana-dapp/anchor": ["../anchor/src/index.ts"],
       "@/*": ["./*"]
     }
   },
